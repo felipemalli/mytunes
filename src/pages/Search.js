@@ -34,10 +34,6 @@ class Search extends Component {
         )));
   }
 
-  isButtonClicked = () => {
-
-  }
-
   render() {
     const {
       artistName,
