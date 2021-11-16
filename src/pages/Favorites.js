@@ -18,7 +18,7 @@ class Favorites extends Component {
     this.updateFavSongs();
   }
 
-  removeSong = ({ target }) => {
+  removeMusic = ({ target }) => {
     const { favSongs } = this.state;
     this.setState({ isLoading: true });
     if (!target.checked) {
@@ -39,7 +39,7 @@ class Favorites extends Component {
     const { isLoading, favSongs } = this.state;
 
     return (
-      <div>
+      <div data-testid="page-favorites">
         <Header />
         {isLoading ? <Loading /> : (
           <div>
@@ -49,8 +49,8 @@ class Favorites extends Component {
                 trackName={ music.trackName }
                 previewUrl={ music.previewUrl }
                 trackId={ music.trackId }
-                onChange={ this.removeSong }
-                isChecked
+                onChange={ this.removeMusic }
+                isChecked={ favSongs.some((song) => song.trackId === music.trackId) }
               />))}
             </ul>
           </div>
