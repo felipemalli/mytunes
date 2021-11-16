@@ -64,7 +64,7 @@ class ProfileEdit extends Component {
               name="name"
               placeholder="Altere seu nome"
               type="text"
-              value={userInfo.name}
+              value={ userInfo.name }
               data-testid="edit-input-name"
               onChange={ this.onInputChange }
             />
@@ -72,7 +72,7 @@ class ProfileEdit extends Component {
               name="email"
               placeholder="Altere seu email"
               type="email"
-              value={userInfo.email}
+              value={ userInfo.email }
               data-testid="edit-input-email"
               onChange={ this.onInputChange }
             />
@@ -80,7 +80,7 @@ class ProfileEdit extends Component {
               name="description"
               placeholder="Altere sua descrição"
               type="text"
-              value={userInfo.description}
+              value={ userInfo.description }
               data-testid="edit-input-description"
               onChange={ this.onInputChange }
             />
@@ -88,7 +88,7 @@ class ProfileEdit extends Component {
               name="image"
               placeholder="Altere sua imagem"
               type="text"
-              value={userInfo.image}
+              value={ userInfo.image }
               data-testid="edit-input-image"
               onChange={ this.onInputChange }
             />
