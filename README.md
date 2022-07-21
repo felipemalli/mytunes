@@ -1,6 +1,6 @@
 # MyTunes
 
-Project front-end MyTunes developed on 11/23/2022 for training React with props and prop-types. CSS not implemented.
+Front-end Project MyTunes developed on 11/23/2022 for training React with props and prop-types. CSS not implemented.
 
 ## Technologies
 
